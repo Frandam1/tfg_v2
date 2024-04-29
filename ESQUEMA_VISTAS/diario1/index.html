@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container my-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-6">
+                <div class="p-4 bg-white shadow rounded">
+                    <h1 class="h4 text-primary">Bienvenido a tu Diario Personal</h1>
+                    <p class="mb-4">Tu espacio personal para reflexionar y crecer cada día.</p>
+                    <p id="dailyTip" class="text-success">Consejo del día: <span id="tip">Aprecia las pequeñas cosas.</span></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 bg-white shadow rounded">
+                    <form id="diaryForm">
+                        <textarea id="achievements" class="form-control mb-3" placeholder="¿Qué lograste hoy?"></textarea>
+                        <textarea id="gratitude" class="form-control mb-3" placeholder="¿Por qué estás agradecido hoy?"></textarea>
+                        <textarea id="challenges" class="form-control mb-3" placeholder="¿Qué desafíos enfrentaste y cómo los manejaste?"></textarea>
+                        <div class="mb-3">
+                            <label for="mood" class="form-label">¿Cómo te sientes hoy?</label>
+                            <select id="mood" class="form-select">
+                                <option value="feliz">Feliz</option>
+                                <option value="triste">Triste</option>
+                                <option value="ansioso">Ansioso</option>
+                                <option value="motivado">Motivado</option>
+                                <option value="tranquilo">Tranquilo</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <input type="file" id="imageInput" class="form-control" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Guardar Entrada</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

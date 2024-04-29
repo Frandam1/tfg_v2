@@ -1,0 +1,20 @@
+/* SIN ENLAZAR */
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e3e6f0;
+    color: #333;
+}
+
+.card-title {
+    font-size: 1.25rem; /* Aumentar el tamaño del título dentro de la tarjeta */
+}
+
+.card-body {
+    font-size: 1rem; /* Ajustar el tamaño del texto dentro del cuerpo de la tarjeta */
+}
+
+.btn-info {
+    background-color: #5db817; /* Color personalizado para el botón, si es necesario */
+}
+

@@ -1,0 +1,25 @@
+/* Asegúrate de incluir el enlace a Bootstrap en tu HTML */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%; /* Ajusta esto según el contenedor */
+}
+
+.card {
+    height: 100px; /* Ajusta según tus necesidades */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dee2e6; /* Color de borde Bootstrap */
+}
+
+.card.flipped, .card:hover {
+    background-color: #f8f9fa; /* Bootstrap light grey background */
+}
+
+/* Personalizar el botón de inicio */
+button {
+    margin-top: 20px;
+}

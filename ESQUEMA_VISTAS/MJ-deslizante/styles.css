@@ -1,0 +1,17 @@
+.puzzle-piece {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 2px;
+    width: 404px; /* Ajuste según el tamaño de las piezas y el espacio entre ellas */
+    margin: 20px auto;
+}

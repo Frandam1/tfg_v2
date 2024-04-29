@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas de Autoevaluación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .btn-info {
+            background-color: #35b817; /* Color personalizado para el botón, si es necesario */
+        }
+    </style>
+
+</head>
+<body class="bg-light">
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Autoevaluaciones de Salud Mental</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="anxiety-tab" data-bs-toggle="tab" data-bs-target="#anxiety" type="button" role="tab" aria-controls="anxiety" aria-selected="true">Ansiedad</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="depression-tab" data-bs-toggle="tab" data-bs-target="#depression" type="button" role="tab" aria-controls="depression" aria-selected="false">Depresión</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="stress-tab" data-bs-toggle="tab" data-bs-target="#stress" type="button" role="tab" aria-controls="stress" aria-selected="false">Estrés</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="wellbeing-tab" data-bs-toggle="tab" data-bs-target="#wellbeing" type="button" role="tab" aria-controls="wellbeing" aria-selected="false">Bienestar</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="sleep-tab" data-bs-toggle="tab" data-bs-target="#sleep" type="button" role="tab" aria-controls="sleep" aria-selected="false">Calidad del Sueño</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <!-- Each tab pane will contain one form -->
+            <!-- Ansiedad -->
+            <div class="tab-pane fade show active" id="anxiety" role="tabpanel" aria-labelledby="anxiety-tab">
+                <form id="anxietyForm" class="mt-4">
+                    <div class="mb-3">
+                        <label for="anxietyQuestion1" class="form-label">¿Con qué frecuencia has sentido nerviosismo o ansiedad sin un motivo claro?</label>
+                        <select id="anxietyQuestion1" class="form-select">
+                            <option value="0">Nunca</option>
+                            <option value="1">Raramente</option>
+                            <option value="2">A veces</option>
+                            <option value="3">Frecuentemente</option>
+                        </select>
+                        <label for="anxietyQuestion2" class="form-label">¿Pregunta 2ismo o ansiedad sin un motivo claro?</label>
+                        <select id="anxietyQuestion2" class="form-select">
+                            <option value="0">Nunca</option>
+                            <option value="1">Raramente</option>
+                            <option value="2">A veces</option>
+                            <option value="3">Frecuentemente</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Evaluación</button>
+                </form>
+            </div>
+            <!-- Depresión -->
+            <div class="tab-pane fade" id="depression" role="tabpanel" aria-labelledby="depression-tab">
+                <form id="depressionForm" class="mt-4">
+                    <div class="mb-3">
+                        <label for="depressionQuestion1" class="form-label">¿Has perdido interés o placer en tus actividades habituales?</label>
+                        <select id="depressionQuestion1" class="form-select">
+                            <option value="0">Nunca</option>
+                            <option value="1">Raramente</option>
+                            <option value="2">A veces</option>
+                            <option value="3">Frecuentemente</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Evaluación</button>
+                </form>
+            </div>
+            <!-- Estrés -->
+            <div class="tab-pane fade" id="stress" role="tabpanel" aria-labelledby="stress-tab">
+                <form id="stressForm" class="mt-4">
+                    <div class="mb-3">
+                        <label for="stressQuestion1" class="form-label">¿Cuánto estrés has experimentado en la última semana debido al trabajo o asuntos personales?</label>
+                        <select id="stressQuestion1" class="form-select">
+                            <option value="0">Ninguno</option>
+                            <option value="1">Poco</option>
+                            <option value="2">Moderado</option>
+                            <option value="3">Mucho</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Evaluación</button>
+                </form>
+            </div>
+            <!-- Bienestar -->
+            <div class="tab-pane fade" id="wellbeing" role="tabpanel" aria-labelledby="wellbeing-tab">
+                <form id="wellbeingForm" class="mt-4">
+                    <div class="mb-3">
+                        <label for="wellbeingQuestion1" class="form-label">¿Te sientes satisfecho con la calidad de tus relaciones sociales?</label>
+                        <select id="wellbeingQuestion1" class="form-select">
+                            <option value="0">Nunca</option>
+                            <option value="1">Raramente</option>
+                            <option value="2">A veces</option>
+                            <option value="3">Frecuentemente</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Evaluación</button>
+                </form>
+            </div>
+            <!-- Calidad del Sueño -->
+            <div class="tab-pane fade" id="sleep" role="tabpanel" aria-labelledby="sleep-tab">
+                <form id="sleepForm" class="mt-4">
+                    <div class="mb-3">
+                        <label for="sleepQuestion1" class="form-label">¿Has tenido problemas para dormir en las últimas dos semanas?</label>
+                        <select id="sleepQuestion1" class="form-select">
+                            <option value="0">Nunca</option>
+                            <option value="1">Raramente</option>
+                            <option value="2">A veces</option>
+                            <option value="3">Frecuentemente</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Evaluación</button>
+                </form>
+            </div>
+            <!-- Fijn formularios-->
+        </div>
+    </div>
+        <!-- Bootstrap JS con Popper para funcionalidad de los tabs y demás componentes interactivos -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Opcional: Chart.js si decides utilizar gráficos -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Script personalizado para manejar los formularios y la lógica de seguimiento -->
+        <script src="script3.js"></script>
+</body>
+</html>
